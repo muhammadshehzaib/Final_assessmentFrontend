@@ -42,7 +42,7 @@ const SalesChart: React.FC = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3009/news/aggregateByDate"
+        "https://final-assessment-backend.vercel.app/news/aggregateByDate"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch blog data");

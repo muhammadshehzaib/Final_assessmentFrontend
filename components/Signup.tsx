@@ -27,7 +27,7 @@ function SignUp() {
       };
 
       const response = await fetch(
-        "http://localhost:3009/auth/register",
+        "https://final-assessment-backend.vercel.app/auth/register",
         {
           method: "POST",
           headers: {

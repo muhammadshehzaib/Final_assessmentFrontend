@@ -25,7 +25,9 @@ const BlogId: React.FC<BlogIdProps> = ({ id }) => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:3009/news/${id}`);
+      const response = await fetch(
+        `https://final-assessment-backend.vercel.app/news/${id}`
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch blog data");
       }

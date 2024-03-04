@@ -27,7 +27,7 @@ const Home = () => {
 
   async function getData(page) {
     try {
-      const res = await fetch(`http://localhost:3009/news/all?page=${page}`);
+      const res = await fetch(`https://final-assessment-backend.vercel.app/news/all?page=${page}`);
       if (!res.ok) {
         throw new Error("Failed to fetch data");
       }
