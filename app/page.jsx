@@ -18,7 +18,7 @@ const Home = () => {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState([]);
 
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 1000;
 
   useEffect(() => {
